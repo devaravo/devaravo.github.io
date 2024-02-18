@@ -1,21 +1,18 @@
-function LikeButton() {
-  const [liked, setLiked] = React.useState(false)
+function Button() {
+  const [like, setLike] = React.useState(false)
 
-  const handleClick = () => {
-    setLiked(!liked)
+  const handleButton = () => {
+    setLike(!like)
   }
 
   return React.createElement(
     "button",
     {
-      style: { backgroundColor: liked ? "blue" : "transparent" },
-      onClick: handleClick,
+      style: { backgroundColor: like ? "green" : "white" },
+      onClick: handleButton,
     },
-    liked ? "Liked" : "Like"
+    like ? "Liked" : "Like"
   )
 }
 
-ReactDOM.render(
-  React.createElement(LikeButton),
-  document.getElementById("react")
-)
+ReactDOM.render(React.createElement(Button), document.getElementById("react"))

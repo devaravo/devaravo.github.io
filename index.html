@@ -229,14 +229,6 @@
         <div id="react"></div>
 
       </section>
-      <section >
-        
-        
-        
-        
-       
-        
-      </section>
 
       <hr class="m-0" />
     </div>
@@ -244,11 +236,14 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
     <!-- Core theme JS-->
     <script src="js/scripts.js"></script>
+    <!-- Including jQuery -->
     <script
       src="https://code.jquery.com/jquery-3.7.1.min.js"
       integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
       crossorigin="anonymous"
     ></script>
+
+    <!-- Integrating joke API-->
     <script>
       $.get(
         "https://v2.jokeapi.dev/joke/Programming?type=single",
@@ -257,12 +252,16 @@
         }
       )
     </script>
+
+    <!-- Displaying digital clock-->
     <script>
         function displayTime() {
 				document.getElementById("digital-clock").innerHTML="Current time: "+ new Date();
 		}
 		setInterval(displayTime, 500);
     </script>
+
+    <!-- Including external js for analog clock-->
     <script src="https://waph-uc.github.io/clock.js"></script>
     <script>
         var canvas = document.getElementById("analog-clock");
@@ -279,13 +278,20 @@
         }
 
     </script>
+
+    <!-- Including weather widget-->
     <script>
         !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
     </script>
+
+    <!-- Including React library-->
     <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script> 
     <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
+    
+    <!-- Including react code-->
     <script src="js/sample_component.js"></script>
 
+    <!-- Integrating cookies-->
     <script>
         
         if (document.cookie.indexOf("username") <0 ){
